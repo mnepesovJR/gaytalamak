@@ -174,7 +174,8 @@
                         UNIQUE IDEAS
                     </div>
                     <div class="text-secondary">
-                        Power is free Bootstrap CSS template from <a href="#">Templatemo</a> website. Feel free to modify
+                        Power is free Bootstrap CSS template from <a href="#">Templatemo</a> website. Feel free to
+                        modify
                         and use this layout. Please tell your friends abot our website. Mixtape hella beard meditation,
                         organic polariod waistcoat humblebrag taxider my tumblr. Hexagon kinfolk chartreuse shoreditch.
                     </div>
@@ -195,7 +196,7 @@
         </div>
 
         <div class="container-xxl py-5 bg-seryrak">
-            <div class="row justify-content-center pb-5">
+            <div class="row p-5 justify-content-center ">
                 <div class="col-6">
                     <div class="text-uppercase h5 fw-semibold">
                         what we can do else
@@ -206,35 +207,32 @@
                         illum iusto reprehenderit harum impedit eos!
                     </div>
                 </div>
-                <div class="splide" role="group" aria-label="Splide pb-5">
+                <div class="splide" id="second-slider" role="group" aria-label="Splide">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <div class="row py-5">
-                                    <div class="col-3">
-                                        <div>
-                                            <img src="img/second-portfolio-item.jpg" alt=""
-                                                class="img-fluid h-100 w-100">
-                                        </div>
-                                    </div>
-                                    <div class=" col-3">
-                                        <div>
-                                            <img src="img/third-portfolio-item.jpg" alt=""
-                                                class="img-fluid h-100 w-100">
-                                        </div>
-                                    </div>
-                                    <div class=" col-3">
-                                        <div>
-                                            <img src="img/fourth-portfolio-item.jpg" alt=""
-                                                class="img-fluid h-100 w-100">
-                                        </div>
-                                    </div>
-                                    <div class=" col-3">
-                                        <div>
-                                            <img src="img/first-portfolio-item.jpg" alt=""
-                                                class="img-fluid h-100 w-100">
-                                        </div>
-                                    </div>
+                                <div class="col mb-5">
+                                    <img src="img/first-portfolio-item.jpg" alt="" class="img-fluid">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="col">
+                                    <img src="img/second-portfolio-item.jpg" alt="" class="img-fluid">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="col">
+                                    <img src="img/third-portfolio-item.jpg" alt="" class="img-fluid">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="col">
+                                    <img src="img/fourth-portfolio-item.jpg" alt="" class="img-fluid">
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="col ">
+                                    <img src="img/third-portfolio-item.jpg" alt="" class="img-fluid">
                                 </div>
                             </li>
                         </ul>
@@ -242,6 +240,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="container-xxl text-center bg-white py-5">
             <div class="row justify-content-center pb-6">
                 <div class="col-6">
@@ -269,22 +268,25 @@
 
         <style>
             .splide__pagination {
-                right: unset;
-                margin-left: 3rem;
-                margin-bottom: 3rem;
+                right: 5rem;
+                margin-left: 0rem;
+                margin-bottom: 0rem;
+                
             }
         </style>
+
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 var splide = new Splide('.splide', {
                     type: "loop",
                     autoplay: 1,
-                    arrows: 0, //arrows – slayderiň iki tarapyndaky ok düwmelerini görkezýär. 0 diýmek ok düwmeleri görkezilmeýär, slayder diňe awtomatik hereket edýär.
+                    arrows: 1, //arrows – slayderiň iki tarapyndaky ok düwmelerini görkezýär. 0 diýmek ok düwmeleri görkezilmeýär, slayder diňe awtomatik hereket edýär.
                     interval: 3e3, //interval – awtomatiki slayderiň slaydlar arasyndaky wagty görkezýär. 3e3 bolsa 3000 millisekundy (3 sekunt) aňladýar
                     pauseOnHover: 0, //pauseOnHover – slayderiň üstüne syçanjygyň kursory ýerleşdirilende işlemegini durzup-durzmazlygyny görkezýär. 0 diýmek, durzup bolmaýandygyny görkezýär, ýagny slayder her ýagdaýda hereket etmegini dowam etdirýär.
                     perMove: 1, //perMove – her gezek slayder bir gezekde näçe slayd göçürmeli diýlenini görkezýär. 1 diýip görkezmek bilen, her gezekde diňe 1 slayd hereket edýär.
-                    perPage: 1, //perPage – ekranda bir wagtyň özünde näçe slayd görkezerini görkezýär. Bu ýerde 1 diýmek, ekranda diňe bir slayd görkezilýär diýmegi aňladýar.
+                    perPage: 4, //perPage – ekranda bir wagtyň özünde näçe slayd görkezerini görkezýär. Bu ýerde 1 diýmek, ekranda diňe bir slayd görkezilýär diýmegi aňladýar.
                     gap: "1.5rem", //gap – slayderdäki slaydlaryň arasyndaky boşlugy görkezýär. 1.5rem diýmek, slaydlar arasynda 1.5rem (1.5 em ölçeg birligi) boşluk bolar diýmegi aňladýar.
+                    padding:'0rem'
                 });
                 splide.mount();  //  Bu hatda döredilen Splide slayderini işledýär. Başgaça aýdylanda, slayder kody üstünlikli ýüklenenden soň ony görmek üçin ekrana ýerleşdirýär.
             });
